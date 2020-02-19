@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>kicart</title>
+</head>
+
+<body>
+    <nav id="overlay">
+        <img src="img/close.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li><a href="#">home</a>
+                <span>Hurry, get back to the choppa!</span>
+            </li>
+            <li><a href="#">about us</a>
+                <span>Hurry, get back to the choppa!</span>
+            </li>
+            <li><a href="#">services</a>
+                <span>Hurry, get back to the choppa!</span>
+            </li>
+            <li><a href="#">contact</a>
+                <span>Hurry, get back to the choppa!</span>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <header>
+        <a href="#" class="logo">kicart</a>
+
+        <img src="img/menu.svg" class="menu-btn" id="open-menu">
+
+    </header>
+    <section>
+        <h1>Let<span>'</span>s <br> do <br> it</h1>
+    </section>
+    <script>
+        const overlay = document.getElementById('overlay');
+        const closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function () {
+            overlay.classList.add('show-menu');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+    </script>
+</body>
+
+</html>
